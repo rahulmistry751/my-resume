@@ -14,9 +14,8 @@ class ResumeRenderer {
 
   private createHeader(): string {
     return chalk.bold.cyan(`
-╔═══════════════════════════════════════════════════════════════════════════════╗
-║                                  ${this.resume.name}                          ║
-║                               ${this.resume.title}                            ║
+                                           ${this.resume.name}                                   
+                                           ${this.resume.title}                                
 ╚═══════════════════════════════════════════════════════════════════════════════╝
     `);
   }
