@@ -1,0 +1,32 @@
+{
+  "name": "rahul-mistry-xl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "npm run build && node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "resume",
+    "cli",
+    "terminal",
+    "portfolio",
+    "professional"
+  ],
+  "author": "Rahul Mistry rahulmistry751@gmail.com",
+  "license": "MIT",
+  "description": "My professional resume displayed in terminal",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
