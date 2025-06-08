@@ -7,7 +7,10 @@
     "build": "tsc",
     "start": "npm run build && node dist/index.js",
     "dev": "tsx src/index.ts",
-    "test": "npm run build && node dist/index.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -26,7 +29,16 @@
   },
   "devDependencies": {
     "@types/node": "^22.15.30",
+    "@vitest/ui": "^3.2.2",
     "tsx": "^4.19.4",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahulmistry751/my-resume"
   }
 }
