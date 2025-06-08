@@ -40,5 +40,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/rahulmistry751/my-resume"
+  },
+  "bin": {
+    "rahul-mistry-xl": "dist/index.js"
   }
 }
